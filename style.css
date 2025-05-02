@@ -19,7 +19,6 @@ header.background {
   background-image: url(public/assets/iteration-1/home-banner.png);
   background-size: cover;
   background-position: center;
-  width: 100vw;
   height: 100vh;
   text-align: center;
   align-items: center;
@@ -67,8 +66,59 @@ button.btn {
   height: 35px;
   margin-top: 10px;
 }
+@media (max-width: 768px) {
+  header.background {
+    padding: 40px 20px;
+    gap: 1rem;
+  }
+  .logo {
+    width: 200px;
+    margin-top: 0;
+  }
+  .first {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  .btn {
+    font-size: 0.8rem;
+    width: 120px;
+    height: 40px;
+  }
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 300px;
+  background-color: #FAF7F2;
+  height: 60px;
+  flex-wrap: wrap;
+  gap: 4px;
+}
 
+.menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #292929;
+  font-size: 16px;
+  gap: 3px;
+}
 
+.menu a img {
+  width: 15px;
+  height: 15px;
+}
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    height: auto;
+  }
 
-
-
+  .menu a {
+    width: 45%;
+    padding: 8px 0;
+  }
+}
