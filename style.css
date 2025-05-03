@@ -130,10 +130,9 @@ button.btn {
 .container {
   display: flex;
   gap: 20px;
-  padding: 40px;
   width: 700px;
   height: 400px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 .ozel-lezzetus h1 {
   font-size: 3rem;
@@ -141,26 +140,31 @@ button.btn {
 }
 .ozel-lezzetus {
   width: 400px;
-  height: 320px;
+  height: 300px;
   background-color: #f5f5f5;
   border-radius: 16px;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-image: url(public/assets/iteration-2/cta/kart-1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: white
 }
+.ozel-lezzetus h1 {
+  margin-top: 25px;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
 .sag-kolon {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 100%;
+  height: 320px;
   width: 400px;
   gap: 16px;
 }
@@ -177,13 +181,21 @@ button.btn {
 }
 .btn-2,
 .btn-3 {
-  margin-top: 10px;
+  margin-top: 0px;
   padding: 10px 20px;
   background-color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 20px;
   cursor: pointer;
+  color: #CE2829;
   font-weight: bold;
+  
+}
+
+.ozel-lezzetus h4 {
+  margin-top: 0px;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
 }
 
 .renkli {
